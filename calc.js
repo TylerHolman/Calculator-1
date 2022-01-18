@@ -13,7 +13,23 @@ reader.question("What would you like to calculate?", function(input){
 	mathSymbol = tokens[0];
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
+	num3 = Number(tokens[1]);
 
+	if  (mathSymbol === '+'){
+		console.log(num1 + num2);
+	}
+if  (mathSymbol === "-"){
+	console.log(num1 - num2);
+}
+if (mathSymbol === "*"){
+	console.log(num1 * num2);
+}
+if (mathSymbol === "/"){
+	console.log(num1 / num2);
+}
+if (mathSymbol === 'Math.sqrt()'){
+	console.log(Math.sqrt(num3));
+}
 
 	// This line closes the connection to the command line interface.
 	reader.close()
